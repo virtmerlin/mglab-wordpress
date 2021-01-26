@@ -1,4 +1,4 @@
-FROM php:7.4-apache
+FROM public.ecr.aws/u3e9a9s8/php:7.4-apache
 
 # persistent dependencies
 RUN set -eux; \
