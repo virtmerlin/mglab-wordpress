@@ -81,7 +81,7 @@ if [[ "$1" == apache2* ]] || [ "$1" == php-fpm ]; then
 			fi
 		done
 		tar "${sourceTarArgs[@]}" . | tar "${targetTarArgs[@]}"
-		sed -i "s/'Welcome'/'Welcome New Admin'/g" $PWD/wp-admin/install.php
+		sed -i "s/'Welcome'/'Welcome Fred Sanford'/g" $PWD/wp-admin/install.php
 		echo >&2 "Complete! WordPress has been successfully copied to $PWD and injected custom welcome msg"
 		if [ ! -e .htaccess ]; then
 			# NOTE: The "Indexes" option is disabled in the php:apache base image
